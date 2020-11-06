@@ -16,7 +16,7 @@ function Footer(props) {
         <footer>
             <Grid container spacing = {0} justify="center">
                 <Grid item xs={6}>
-                    <h1>Number of elements: {props.nrBars}</h1>
+                    <h1>Number of elementssssssss: {props.nrBars}</h1>
                     <Slider
                         className="rail"
                         style={{ width: "230px", color:"white", marginTop:"10px"}}

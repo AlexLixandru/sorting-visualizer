@@ -19,7 +19,7 @@ function Footer(props) {
                     <h1>Number of elements: {props.nrBars}</h1>
                     <Slider
                         className="rail"
-                        style={{ width: "230px", olor:disabled?"red":"white", marginTop:"10px"}}
+                        style={{ width: "230px", color:props.disabled?"red":"white", marginTop:"10px"}}
                         min={4}
                         max={160}
                         defaultValue={20}
@@ -29,7 +29,7 @@ function Footer(props) {
                 <Grid item xs = {6}>
                     <h1>Animation speed: {props.speed}ms</h1>
                         <Slider
-                        style={{ height:"5", width: "230px", color:disabled?"red":"white", marginTop:"10px"}}
+                        style={{ height:"5", width: "230px", color:props.disabled?"red":"white", marginTop:"10px"}}
                         min={2}
                         max={1000}
                         defaultValue={200}

@@ -29,7 +29,6 @@ function Visualization(props) {
     return (
         <div className="visualizationContainer">
             <div className="arrayContainer">
-                {console.log(array.length)}
                 {props.array.map((item, index) => (
                     <div style={{
                         width: `${width}%`,

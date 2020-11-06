@@ -187,11 +187,11 @@ function App() {
         if (action === "setPointers") {
           if (barOneIdx >= 0 && barOneIdx < NUMBER_OF_ARRAY_BARS) {
             const barOneStyle = arrayBars[barOneIdx].style;
-            barOneStyle.backgroundColor = SECONDARY_COLOR;
+            barOneStyle.backgroundColor = THIRD_COLOR;
           }
           if (barTwoIdx >= 0 && barTwoIdx < NUMBER_OF_ARRAY_BARS) {
             const barTwoStyle = arrayBars[barTwoIdx].style;
-            barTwoStyle.backgroundColor = SECONDARY_COLOR;
+            barTwoStyle.backgroundColor = THIRD_COLOR;
           }
           if (barOneIdx !== 0) {
             const previousStyle = arrayBars[barOneIdx - 1].style;
@@ -208,22 +208,22 @@ function App() {
         if (action === "setNextIndexi") {
           const barOneStyle = arrayBars[barOneIdx].style;
           const barTwoStyle = arrayBars[barTwoIdx].style;
-          barOneStyle.backgroundColor = SECONDARY_COLOR;
+          barOneStyle.backgroundColor = THIRD_COLOR;
           barTwoStyle.backgroundColor = barTwoIdx !== pivotIndex ? PRIMARY_COLOR : "yellow"
         }
 
         if (action === "setNextIndexj") {
           const barOneStyle = arrayBars[barOneIdx].style;
           const barTwoStyle = arrayBars[barTwoIdx].style;
-          barOneStyle.backgroundColor = SECONDARY_COLOR;
+          barOneStyle.backgroundColor = THIRD_COLOR;
           barTwoStyle.backgroundColor = barTwoIdx !== pivotIndex ? PRIMARY_COLOR : "yellow";
         }
 
         if (action === "swapColor") {
           const barOneStyle = arrayBars[barOneIdx].style;
           const barTwoStyle = arrayBars[barTwoIdx].style;
-          barOneStyle.backgroundColor = THIRD_COLOR;
-          barTwoStyle.backgroundColor = THIRD_COLOR;
+          barOneStyle.backgroundColor = SECONDARY_COLOR;
+          barTwoStyle.backgroundColor = SECONDARY_COLOR;
         }
 
         if (action === "swap") {
@@ -239,8 +239,8 @@ function App() {
         if (action === "swapped") {
           const barOneStyle = arrayBars[barOneIdx].style;
           const barTwoStyle = arrayBars[barTwoIdx].style;
-          barOneStyle.backgroundColor = SECONDARY_COLOR;
-          barTwoStyle.backgroundColor = SECONDARY_COLOR;
+          barOneStyle.backgroundColor = THIRD_COLOR;
+          barTwoStyle.backgroundColor = THIRD_COLOR;
         }
 
         if (action === "doneIteration") {

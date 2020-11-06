@@ -346,7 +346,7 @@ function App() {
         heapSort={heapSort}
         setDisabled={setDisabled}
       />
-      <Visualization array={array} />ssss
+      <Visualization array={array} />
       <Footer
         setNumberBars={setNumberBars}
         setSpeed={setAnimationSpeed}

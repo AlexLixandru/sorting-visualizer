@@ -352,6 +352,7 @@ function App() {
         setSpeed={setAnimationSpeed}
         speed={ANIMATION_SPEED_MS}
         nrBars={NUMBER_OF_ARRAY_BARS}
+        disabled={disabled}
       />
     </div>
   )

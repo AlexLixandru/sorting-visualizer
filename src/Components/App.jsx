@@ -73,6 +73,7 @@ function App() {
 
   async function bubbleSort() {
     setDisabled(true);
+    setBarsColor(PRIMARY_COLOR)
     const animations = await getBubbleSortAnimations(array);
     const arrayBars = document.getElementsByClassName('bar');
     for (let i = 0; i < animations.length; i++) {
@@ -111,6 +112,7 @@ function App() {
 
   function mergeSort() {
     setDisabled(true);
+    setBarsColor(PRIMARY_COLOR)
     var placeholderArray = array.slice();
     const animations = getMergeSortAnimations(placeholderArray);
     for (let i = 0; i < animations.length; i++) {

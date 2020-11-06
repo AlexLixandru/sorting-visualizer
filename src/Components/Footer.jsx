@@ -24,6 +24,7 @@ function Footer(props) {
                         max={160}
                         defaultValue={20}
                         onChange={handleChangeBars}
+                        onChangeCommitted={handleChangeBars}
                         disabled={props.disabled} />
                 </Grid>
                 <Grid item xs = {6}>
@@ -33,7 +34,7 @@ function Footer(props) {
                         min={2}
                         max={1000}
                         defaultValue={200}
-                        onChange={handleChangeSpeed} 
+                        onChange={handleChangeSpeed}
                         disabled={props.disabled}
                         />
                 </Grid>

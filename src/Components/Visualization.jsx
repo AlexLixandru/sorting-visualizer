@@ -26,10 +26,12 @@ function Visualization(props) {
                                         0.7 : array.length < 140 ?
                                             0.6 : 0.5;
 
+    const array = props.array
+
     return (
         <div className="visualizationContainer">
             <div className="arrayContainer">
-                {props.array.map((item, index) => (
+                {array.map((item, index) => (
                     <div style={{
                         width: `${width}%`,
                         marginLeft: `${margin}px`,

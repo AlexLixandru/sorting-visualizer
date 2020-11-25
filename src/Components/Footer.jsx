@@ -32,8 +32,8 @@ function Footer(props) {
                         <Slider
                         style={{ height:"5", width: "230px", color:props.disabled?"red":"white", marginTop:"10px"}}
                         min={2}
-                        max={1000}
-                        defaultValue={200}
+                        max={800}
+                        defaultValue={100}
                         onChange={handleChangeSpeed}
                         disabled={props.disabled}
                         />

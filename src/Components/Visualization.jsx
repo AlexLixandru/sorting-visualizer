@@ -39,7 +39,8 @@ function Visualization(props) {
                                     0.8 : array.length < 110 ?
                                         0.7 : array.length < 140 ?
                                             0.6 : 0.5;
-                                    
+     console.log(array);
+     console.log(array.length)                               
     return (
         <div className="visualizationContainer">
             <div className="arrayContainer">

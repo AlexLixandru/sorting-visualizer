@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 
 
 export function useForceUpdate() {
@@ -11,8 +11,12 @@ export function useForceUpdate() {
 
 
 function Visualization(props) {
-
-    const array = props.array
+    let array = props.array
+    const forceUpdate = useForceUpdate();
+    if(array.length<props.array.length){
+        forceUpdate(); // force re-render
+    }
+    
     const width = array.length < 6 ?
         9 : array.length < 10 ?
             4.7 : array.length < 15 ?
@@ -35,9 +39,7 @@ function Visualization(props) {
                                     0.8 : array.length < 110 ?
                                         0.7 : array.length < 140 ?
                                             0.6 : 0.5;
-
-    const array = props.array
-    forceUpdate()
+                                    
     return (
         <div className="visualizationContainer">
             <div className="arrayContainer">

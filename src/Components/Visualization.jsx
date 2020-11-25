@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 
+
+export function useForceUpdate() {
+    const [, setTick] = useState(0);
+    const update = useCallback(() => {
+      setTick(tick => tick + 1);
+    }, [])
+    return update;
+  }
+
+
 function Visualization(props) {
 
     const array = props.array
@@ -27,7 +37,7 @@ function Visualization(props) {
                                             0.6 : 0.5;
 
     const array = props.array
-
+    forceUpdate()
     return (
         <div className="visualizationContainer">
             <div className="arrayContainer">
